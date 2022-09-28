@@ -1,0 +1,123 @@
+/* Product Rendering Styles */
+
+body {
+    background-color: #fcf8e8;
+  }
+  
+  #product-container {
+    padding: 4rem;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    row-gap: 4rem;
+    column-gap: 5rem;
+  }
+  
+  .product {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+  }
+  
+  .product-image {
+    width: 300px;
+  }
+  
+  .wishlist-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .wishlist-icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  .product-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px;
+  }
+  
+  .left-container {
+    margin-left: 15px;
+  }
+  
+  .brand {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #25316d;
+  }
+  
+  .title {
+    font-weight: bold;
+    color: #25316d;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #25316d;
+    background-color: yellow;
+    width: fit-content;
+    padding: 5px;
+  }
+  
+  #pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+  }
+  .pagination-btn {
+    padding: 9px 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px;
+    border-color: #1890ff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination-btn:hover {
+    background-color: gainsboro;
+  }
+  
+  .filter-sort-functionality {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #filter-category,
+  #filter-sort {
+    border: none;
+    border-bottom: 1px solid #1890ff;
+    padding: 7px 10px;
+    background-color: #fcf8e8;
+    font-weight: bold;
+    margin-right: 2rem;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    #product-container {
+      grid-template-rows: repeat(6, auto);
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #product-container {
+      grid-template-rows: repeat(12, auto);
+      grid-template-columns: repeat(1, auto);
+    }
+  
+    .filter-sort-functionality {
+      flex-direction: column;
+    }
+  }
+  
