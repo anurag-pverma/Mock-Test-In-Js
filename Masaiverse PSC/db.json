@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Chandra",
+      "age": 29,
+      "place": "Visakhapatnam",
+      "batch": "WEB-21",
+      "profession": "Instructor"
+    },
+    {
+      "id": 2,
+      "name": "Nrupul",
+      "age": 32,
+      "place": "Vijayawada",
+      "batch": "WEB-18",
+      "profession": "Full stack Developer"
+    }
+  ]
+}

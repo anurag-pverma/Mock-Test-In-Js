@@ -1,0 +1,33 @@
+h1 {
+  margin: 5% 40%;
+  width: 50%;
+}
+
+a {
+  height: 20px;
+}
+
+#main {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  font-size: large;
+  font-weight: 700;
+  /* margin: 10% auto; */
+}
+
+a:link,
+a:visited {
+  background-color: rgb(19, 47, 83);
+  color: white;
+  padding: 25px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: red;
+}

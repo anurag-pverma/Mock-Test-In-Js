@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/data.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <a href="./reports.html">Reports</a>
+      <select name="" id="sort" onchange="ageSort()">
+        <option value="">Sort By Age</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to low</option>
+      </select>
+
+      <select name="" id="filterbtc" onchange="filterbtc()">
+        <option value="">Filter By Batch</option>
+        <option value="WEB-15">WEB15</option>
+        <option value="WEB-16">WEB16</option>
+        <option value="WEB-17">WEB17</option>
+        <option value="WEB-18">WEB18</option>
+      </select>
+
+      <input type="text" id="search" placeholder="Search Name" />
+      <button id="btn" onclick="search()">Search</button>
+
+      <div id="modal">
+        <select name="" id="profession">
+          <option value="">Choose Profession</option>
+          <option value="Student">Student</option>
+          <option value="Instructor">Instructor</option>
+          <option value="Full stack Developer">Full stack Developer</option>
+          <option value="Frontend Developer">Frontend Developer</option>
+          <option value="Frontend Developer">Frontend Developer</option>
+        </select>
+
+        <button id="submit">Submit</button>
+
+        <span id="close">&times;</span>
+      </div>
+    </div>
+    <div id="dataDiv"></div>
+  </body>
+</html>
+
+<script src="./scripts/data.js"></script>
